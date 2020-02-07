@@ -1,0 +1,103 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+font-size: 16px;
+margin-top: 3em;
+}
+
+header,
+main,
+footer{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2, h3{
+color:blue;
+}
+
+body{
+    background-color:lightgray;
+    background-size: cover;
+    font-size: medium;
+}
+
+header{
+    padding: 2em 0;
+}
+
+header h1{
+    font-size: 3em;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+}
+
+nav a{
+    padding: .5em 2em;
+color: white;
+text-decoration: none;
+}
+
+nav a:hover{
+    color: violet;
+}
+
+section h2{
+    text-align: center;
+}
+
+section{
+    background-color:#a7cadb;
+    margin: 1em auto;
+    padding-top: 0.5em;
+    min-height: 10em;
+}
+
+section > p{
+    margin: 1em;
+}
+
+#projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 1em;
+    justify-content: center;
+    
+}
+
+#projects article{
+margin: 5px;
+padding: 1em;
+background-color: lightgray;
+border-style: outset;
+}
+
+#projects article img{
+    width: 100%;
+    
+}
+
+footer{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background: #666666;
+    color: whitesmoke;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 1em;
+}
