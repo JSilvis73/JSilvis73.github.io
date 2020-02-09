@@ -1,109 +1,145 @@
 *{
-    font-family: sans-serif;
-    box-sizing: border-box;
-}
-
-html{
-font-size: 16px;
-margin-top: 3em;
-}
-
-header,
-main,
-footer{
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-h1{
-    background-color: gray;
-    padding: 10px;
-    border-radius: 15px;
-}
-
-h1, h2, h3{
-color:blue;
+    font-size: 16px;
 }
 
 body{
-    background-color:lightgray;
-    background-size: cover;
-    font-size: medium;
+    background-color: tan;
+}
+main{
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr .5fr;
+    grid-template-rows: repeat(6 / 1fr);
+}
+
+
+#moti p{
+    background-color: red;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 5px;
+}
+
+#dedi p{
+    background-color: blue;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 5px;
+}
+
+#crea p{
+    background-color: green;
+    text-align: end;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 5px;
 }
 
 header{
-    padding: 2em 0;
+    text-align: center;
+    background-color: magenta;
+    margin: 10px;
+    margin-left: 35%;
+    margin-right: 20%;
+
 }
 
 header h1{
-    font-size: 3em;
+    font-size: 32px;
+    margin-top: 0px;
 }
 
-nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: grey;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
+#myPic{
+    grid-column: 2 / 3;
+    background-color: green;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#myPic img{
 
 }
 
-nav a{
-    padding: .5em 2em;
-color: white;
-text-decoration: none;
+#aboutMe{
+    grid-column: 3 / 5;
+    padding: 10px;
+    background-color: lime;
+    margin: 10px;
+    border-radius: 20px;
 }
 
-nav a:hover{
-    color: violet;
+#mySkills{
+    grid-column: 2 / 5;
+    background-color: lawngreen;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
 }
 
-section h2{
-    padding-left: 2%;
+#mySkills h2{
+    text-align: center;
 }
 
-section{
-    background-color:#a7cadb;
-    margin: 1em auto;
-    padding-top: 0.5em;
-    min-height: 10em;
+#myProjects{
+    background-color: greenyellow;
+    grid-column: 2 / 5;
+    grid-row: repeat(3, 1fr);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
 }
 
-section > p{
-    margin: 1em;
+#myProjects h2{
+    text-align: center;
+}
+
+#myProjects p{
+    text-align: center;
+}
+
+#myProjects article{
+    border-style: groove;
+    border-width: thick;
+    padding: 5px;
+}
+
+#myProjects article h3{
+    border-style: groove;
+    padding: 5px;
+    text-align: center;
 }
 
 #projects{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#contactMe{
+    grid-column: 2 / 5;
+    background-color: mediumpurple;
+    border-radius: 20px;
+}
+
+#contactMe h2{
+    text-align: center;
+}
+
+#contactMe p{
+    text-align: center;
+
+}
+
+nav{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-column-gap: 1em;
-    justify-content: center;
-    
+    position: fixed;
+    width: 150px;
+    height: 300px;
+    top: 25%;
+    bottom: 0;
+    background-color: hotpink;
+    border-radius: 20px;
 }
 
-#projects article{
-margin: 5px;
-padding: 1em;
-background-color: lightgray;
-border-style: outset;
-}
-
-#projects article img{
-    width: 100%;
-    
-}
-
-footer{
-    margin-top: 2em;
-    margin-bottom: 1em;
-    background: #666666;
-    color: whitesmoke;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    padding: 1em;
+nav a{
+    padding: 10px;
 }
