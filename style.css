@@ -1,9 +1,11 @@
 *{
     font-size: 16px;
+    max-width: 1000px;
 }
 
 body{
-    background-color: tan;
+    margin: 2%;
+    background-color: #f0ead6;
 }
 main{
     display: grid;
@@ -17,6 +19,9 @@ main{
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 5px;
+    color: #FEFEFA;
+    font-size: 25px;
+    border-radius: 10px 10px 0% 0%;
 }
 
 #dedi p{
@@ -25,22 +30,32 @@ main{
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 5px;
+    color: #FEFEFA;
+    font-size: 25px;
+    font-style: italic;
+    
 }
 
 #crea p{
-    background-color: green;
+    background-color: #FFF700;
     text-align: end;
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 5px;
+    color: #FEFEFA;
+    font-size: 25px;
+    font-family: fantasy;
+    font-style: italic;
+    border-radius: 0% 0% 10px 10px;
 }
 
 header{
     text-align: center;
-    background-color: magenta;
+    background-color: #87FF2A;
     margin: 10px;
     margin-left: 35%;
     margin-right: 20%;
+    border-radius: 20px;
 
 }
 
@@ -51,7 +66,7 @@ header h1{
 
 #myPic{
     grid-column: 2 / 3;
-    background-color: green;
+    background-color: lightseagreen;
     border-radius: 20px;
     margin: 10px;
 }
@@ -66,6 +81,10 @@ header h1{
     background-color: lime;
     margin: 10px;
     border-radius: 20px;
+}
+
+#aboutMe h2{
+    text-align: center;
 }
 
 #mySkills{
@@ -117,6 +136,7 @@ header h1{
 #contactMe{
     grid-column: 2 / 5;
     background-color: mediumpurple;
+    margin: 10px;
     border-radius: 20px;
 }
 
@@ -136,8 +156,9 @@ nav{
     height: 300px;
     top: 25%;
     bottom: 0;
-    background-color: hotpink;
+    background-color: lightblue;
     border-radius: 20px;
+    max-width: 15%;
 }
 
 nav a{
