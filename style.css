@@ -1,6 +1,7 @@
 *{
-    font-size: 16px;
+    font-size: 18px;
     max-width: 1000px;
+    
 }
 
 body{
@@ -47,6 +48,7 @@ main{
     font-family: fantasy;
     font-style: italic;
     border-radius: 0% 0% 10px 10px;
+    padding: 5px;
 }
 
 header{
@@ -66,37 +68,53 @@ header h1{
 
 #myPic{
     grid-column: 2 / 3;
-    background-color: lightseagreen;
+    background-color: #FFF700;
     border-radius: 20px;
-    margin: 10px;
+    max-width: 60%;
+    padding: 5%;
+    margin-left: 20%;
+    border-style: solid;
+
 }
 
 #myPic img{
-
+max-width: 200px;
+max-height: 200px;
+padding: 15%;
+background-color:blue;
+border-radius: 20px;
+margin: 6%;
+border-style: solid;
+border-color: red;
+border-width: thick;
 }
 
 #aboutMe{
     grid-column: 3 / 5;
     padding: 10px;
-    background-color: lime;
+    background-color: lightblue;
     margin: 10px;
     border-radius: 20px;
+    border-style:solid;
 }
 
 #aboutMe h2{
     text-align: center;
+    font-style: italic;
 }
 
 #mySkills{
     grid-column: 2 / 5;
-    background-color: lawngreen;
+    background-color: #FF7A00;
     padding: 10px;
     border-radius: 20px;
     margin: 10px;
+    border-style:solid;
 }
 
 #mySkills h2{
     text-align: center;
+    font-style: italic;
 }
 
 #myProjects{
@@ -106,28 +124,43 @@ header h1{
     margin: 10px;
     border-radius: 20px;
     padding: 10px;
+    border-style:solid;
 }
 
 #myProjects h2{
     text-align: center;
+    font-style: italic;
 }
+
 
 #myProjects p{
     text-align: center;
 }
 
-#myProjects article{
-    border-style: groove;
-    border-width: thick;
-    padding: 5px;
+#myProjects img{
+    max-width: 150px;
+    max-height: 150px;
+    padding: 15%;
 }
 
-#myProjects article h3{
+#myProjects article{
     border-style: groove;
+    border-width: 2px;
     padding: 5px;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 5px;
+    background-color: lightblue;
+}
+
+#myProjects article a{
+    padding: 20%;
     text-align: center;
 }
 
+#myProjects article a:hover{
+    color: red;
+}
 #projects{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -135,13 +168,15 @@ header h1{
 
 #contactMe{
     grid-column: 2 / 5;
-    background-color: mediumpurple;
+    background-color: rgb(237, 162, 247);
     margin: 10px;
     border-radius: 20px;
+    border-style:solid;
 }
 
 #contactMe h2{
     text-align: center;
+    font-style: italic;
 }
 
 #contactMe p{
@@ -159,8 +194,25 @@ nav{
     background-color: lightblue;
     border-radius: 20px;
     max-width: 15%;
+    border-style:solid;
 }
 
 nav a{
     padding: 10px;
+    text-align: center;
+    margin: 10%;
+    background-color: lime;
+    border-radius: 20px;
+    border-style: solid;
+    
+}
+#quote{
+    text-align: center;
+    font-style: italic;
+    font-size: 30%;
+    margin: 10px;
+    margin-left: 35%;
+    margin-right: 20%;
+    border-radius: 20px;
+
 }
